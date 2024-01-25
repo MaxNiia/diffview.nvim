@@ -11,7 +11,7 @@ local function render_file(comp, show_path, depth)
   ---@type FileEntry
   local file = comp.context
 
-  comp:add_text(file.status .. " ", hl.get_git_hl(file.status))
+  comp:add_text(config.status_symbols[file.status] .. " ", hl.get_git_hl(file.status))
 
   if depth then
     comp:add_text(string.rep(" ", depth * 2 + 2))

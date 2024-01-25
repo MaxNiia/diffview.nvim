@@ -51,6 +51,19 @@ M.defaults = {
     fold_open = "",
     done = "✓",
   },
+  status_symbols = {
+    ["A"] = "A",
+    ["?"] = "?",
+    ["M"] = "M",
+    ["R"] = "R",
+    ["C"] = "C",
+    ["T"] = "T",
+    ["U"] = "U",
+    ["X"] = "X",
+    ["D"] = "D",
+    ["B"] = "B",
+    ["!"] = "!",
+  },
   view = {
     default = {
       layout = "diff2_horizontal",
